@@ -12,11 +12,11 @@
         <h1><font face="Freestyle Script">IPlant</font></h1>
         <nav>
             <ul>
-                <a href="#">Beranda</a>
-                <a href="#">Daftar Tanaman</a>
-                <a href="#">Metodi Bertani</a>
-                <a href="#">Menghitung Kebutuhan Benih</a>
-                <div class="about"><a href="#">About Us.</a></div>
+                <a href="halaman1.html">Beranda</a>
+                <a href="halaman4.html">Daftar Tanaman</a>
+                <a href="halaman3.html">Metode Bertani</a>
+                <a href="halaman2.html">Menghitung Kebutuhan Benih</a>
+                <div class="about"><a href="halaman6.html">About Us.</a></div>
             </ul>
         </nav>
         <form class="form1">
@@ -24,54 +24,60 @@
         </form>
     </header>
     <div class=konten>
-        <form action="" class="form2">
+        <form action="halaman5.html" class="form2">
             <h2><b>Menghitung Kebutuhan Benih</b></h2>
             <div class="form3">
                 <label for="luasLahan">Luas Lahan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Luas Lahan">
+                <input type="number" class="input" id="a" onkeyup="hitung()" placeholder="Masukkan Luas Lahan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Lebar Bedengan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Lebar Bedengan">
+                <input type="number" class="input" id="b" onkeyup="hitung()" placeholder="Masukkan Lebar Bedengan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Jarak Antar Bedengan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Jarak Antar Bedengan">
+                <input type="number" class="input" id="c" onkeyup="hitung()" placeholder="Masukkan Jarak Antar Bedengan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Jarak Tanam Antar Barisan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Jarak Tanam Antar Barisan">
+                <input type="number" class="input" id="d" onkeyup="hitung()" placeholder="Masukkan Jarak Tanam Antar Barisan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Jumlah Barisan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Jumlah Barisan">
+                <input type="number" class="input" id="e" onkeyup="hitung()" placeholder="Masukkan Jumlah Barisan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Jumlah Benih Per Lubang</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Jumlah Benih Per Lubang">
+                <input type="number" class="input" id="f" onkeyup="hitung()" placeholder="Masukkan Jumlah Benih Per Lubang">
             </div>
             <div class="form3">
                 <label for="luasLahan">Daya Tumbuh Setiap Benih</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Daya Tumbuh Setiap Benih">
+                <input type="number" class="input" id="g" onkeyup="hitung()" placeholder="Masukkan Daya Tumbuh Setiap Benih">
             </div>
             <div class="form3">
                 <label for="luasLahan">Jumlah Benih Per Kemasan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Jumlah Benih Per Kemasan">
+                <input type="number" class="input" id="h" onkeyup="hitung()" placeholder="Masukkan Jumlah Benih Per Kemasan">
             </div>
             <div class="form3">
                 <label for="luasLahan">Berat Benih Per Kemasan</label>
                 <br>
-                <input type="number" class="input" placeholder="Masukkan Berat Benih Per Kemasan">
+                <input type="number" class="input" id="i" onkeyup="hitung()" placeholder="Masukkan Berat Benih Per Kemasan">
             </div>
-            <button type="submit" class="tombol">Hitung</button>
+            <div class="form3">
+                <label for="luasLahan">Benih yang dibutuhkan </label>
+                <br>
+                <input type="number" class="hasil" id="res">
+            </div>
+
+            
         
         
             </form>
@@ -94,5 +100,22 @@
         <p>IPlant.com</p>
     </div>
 </footer>
+<script type="text/javascript">
+
+        var a1 = document.getElementById("a");
+        var b1 = document.getElementById("b");
+        var c1 = document.getElementById("c");
+        var d1 = document.getElementById("d");
+        var e1 = document.getElementById("e");
+        var f1 = document.getElementById("f");
+        var g1 = document.getElementById("g");
+        var h1 = document.getElementById("h");
+        var i1 = document.getElementById("i");
+    function hitung(){
+        document.getElementById("res").value = (a1.value/((b1.value+c1.value)*d1.value))*e1.value*f1.value*g1.value;
+       
+       
+    }
+</script>
 </body>
 </html>

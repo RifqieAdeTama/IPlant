@@ -106,30 +106,52 @@ form .search{
     margin-top: 0px;
     margin-right: 40px;
 }
+.konten{
+    float: left;
+    margin-left: 80px;
+    margin-top: 150px;
+}
+.konten h2{
+    color: #33CCFF;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+.aboutUs{
+    margin-left: 80px;
+    height: auto;
+    width: 500px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px -5px black;
 
+}
+.aboutUs h3{
+    text-align: center;
+    color: white;
+    background-color: #33CCFF;
+    font-family: Freestyle Script;
+    font-size: 50px;
+}
+.aboutUs img{
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
+}
 
+.identitas{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #c0c0c0;
+    margin-top: 80px;
+    color: #333;
+    float: right;
+    margin-right: 50px;
+}
 /* gambar */
 
-.berita{
-    float: left;
-    margin-right: 0px;
-    margin-top: 100px;
-}
-.berita .img img{
-    width: 300px;
-    height: 150px;
-    float: left;
-    margin-left: 30px;
-    box-shadow: 5px 5px 6px -6px black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 60px;
-}
 
-.img img{
-    width: 300px;
-    height: 150px;
-}
 .kalender{
     background-color: #33CCFF;
     float: right;
@@ -149,26 +171,27 @@ form .search{
     height: 200px;
     padding: 5px;
 }
-.press{
-    margin-left: 150px;
-}
 
-tr td button:hover{
+.press{
+    margin-left: 200px;
+}
+.press button:hover{
     background-color: blue;
 }
-tr td button{
+.press button{
+    float: left;
     background-color: #33CCFF;
     border: none;
     color: white;
     width: 200px;
     height: 35px;
-    margin-right: 50px;
     font-weight: bold;
+    margin-right: 50px;
     border-radius: 20px;
     box-shadow: 5px 5px 6px -6px black;
     cursor: pointer;
+    margin-top: 150px;
 }
-
 .garis{
     float: right;
     margin-right: 10px;
@@ -191,23 +214,4 @@ footer .garisBawah{
     text-align: center;
     color: white;
     font-weight: bold;
-}
-
-/*media query*/
-
-@media(max-width:720px){
-    header,
-    header nav,
-    header nav ul a,
-    header nav ul .about a,
-    header .form1,
-    .kalender .img,
-    .garis,
-    .garisBawah,
-    table
-    {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
 }
